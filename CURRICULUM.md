@@ -130,26 +130,26 @@
 
 | ID | Case Study | Status | Key Focus Area | Primary Building Blocks |
 |---|---|:---:|---|---|
-| `CS-01` | YouTube / Netflix Video Streaming Platform | `TODO` | Adaptive Bitrate (HLS/DASH), Chunking, CDN, Transcoding Pipeline | `BB-05`, `BB-14`, `BB-38` |
-| `CS-02` | Quora / StackOverflow Knowledge Platform | `TODO` | Search, Ranking, Distributed Caching, Content Moderation | `BB-10`, `BB-15`, `BB-23` |
-| `CS-03` | Google Maps / Navigation Engine | `TODO` | Graph Routing (A* / Dijkstra), Geospatial Tiles, S2 Cells | `BB-32`, `BB-05` |
-| `CS-04` | Yelp / Proximity Search Service | `TODO` | Spatial Querying, Geohash, Quadtree Sharding, Cache-Aside | `BB-32`, `BB-10`, `BB-15` |
-| `CS-05` | Uber / Lyft Ride Hailing Platform | `TODO` | Real-Time Driver Matching, Geospatial Tracking, WebSocket, Surge Pricing | `BB-32`, `BB-37`, `BB-12` |
-| `CS-06` | Twitter / X Social Network | `TODO` | Fan-out on Write vs Read, Timeline Cache, Snowflake Sequencer | `BB-06`, `BB-10`, `BB-33` |
-| `CS-07` | Newsfeed Aggregator | `TODO` | Activity Graphs, Hybrid Fan-out, Ranking Pipeline, Cache Invalidation | `BB-10`, `BB-33`, `BB-34` |
-| `CS-08` | Instagram / Flickr Photo Sharing Platform | `TODO` | Image Ingestion, Thumbnail Generation, Object Storage, Global CDN | `BB-05`, `BB-14`, `BB-10` |
-| `CS-09` | TinyURL / URL Shortening Service | `TODO` | Base62 Encoding, MD5/MurmurHash, Distributed Sequencer, Cache Sizing | `BB-04`, `BB-06`, `BB-24` |
-| `CS-10` | Distributed Web Crawler | `TODO` | Politeness, Frontier Queue, DNS Caching, Duplicate Elimination (Bloom) | `BB-01`, `BB-11`, `BB-17` |
-| `CS-11` | WhatsApp / Discord Real-Time Chat Platform | `TODO` | WebSocket Connections, Presence Service, Mnesia/Cassandra Chat Store | `BB-37`, `BB-04`, `BB-23` |
-| `CS-12` | Typeahead / Search Autocomplete System | `TODO` | Trie Data Structure, Frequency Aggregation, Top-K Heap, CDN Edge | `BB-10`, `BB-15`, `BB-05` |
-| `CS-13` | Google Docs / Collaborative Document Editor | `TODO` | Operational Transformation (OT) vs CRDTs, WebSocket, State Sync | `BB-37`, `BB-35` |
-| `CS-14` | Distributed Deployment & CI/CD Pipeline | `TODO` | Canary Rollouts, Artifact Distribution, Task Graphs, Orchestration | `BB-17`, `BB-27`, `BB-31` |
-| `CS-15` | Stripe / PayPal Payment Gateway & Ledger | `TODO` | Double-Entry Bookkeeping, Idempotency, 2PC/Saga, Distributed Lock | `BB-21`, `BB-30`, `BB-36` |
-| `CS-16` | LeetCode / HackerRank Online Coding Platform | `TODO` | Sandboxed Code Execution (Docker/gVisor), Isolation, Task Scheduler | `BB-17`, `BB-27`, `BB-21` |
-| `CS-17` | ChatGPT Conversational AI Platform | `TODO` | SSE Streaming Tokens, Context Buffer, Model Gateway, Vector Retrieval | `BB-39`, `BB-40`, `BB-37` |
-| `CS-18` | Distributed Big Data Lakehouse Platform | `TODO` | Parquet Storage, Compaction, Metastore, Partition Pruning | `BB-14`, `BB-38` |
-| `CS-19` | LLM-Powered Customer Support Platform | `TODO` | Multi-Turn Conversation State, Tool Calling, Vector Search, Fallbacks | `BB-39`, `BB-40`, `BB-10` |
-| `CS-20` | Enterprise AI Coding Assistant (Cursor / Copilot) | `TODO` | AST Chunking, Context Slicing, Real-Time Inference, Prompt Cache | `BB-39`, `BB-40` |
+| `CS-01` | YouTube / Netflix Video Streaming Platform | `COMPLETE` | Adaptive Bitrate (HLS/DASH), Chunking, CDN, Transcoding Pipeline | `BB-05`, `BB-14`, `BB-38` |
+| `CS-02` | Quora / StackOverflow Knowledge Platform | `COMPLETE` | Search, Ranking, Distributed Caching, Content Moderation | `BB-10`, `BB-15`, `BB-23` |
+| `CS-03` | Google Maps / Navigation Engine | `COMPLETE` | Graph Routing (A* / Dijkstra), Geospatial Tiles, S2 Cells | `BB-32`, `BB-05` |
+| `CS-04` | Yelp / Proximity Search Service | `COMPLETE` | Spatial Querying, Geohash, Quadtree Sharding, Cache-Aside | `BB-32`, `BB-10`, `BB-15` |
+| `CS-05` | Uber / Lyft Ride Hailing Platform | `COMPLETE` | Real-Time Driver Matching, Geospatial Tracking, WebSocket, Surge Pricing | `BB-32`, `BB-37`, `BB-12` |
+| `CS-06` | Twitter / X Social Network | `COMPLETE` | Fan-out on Write vs Read, Timeline Cache, Snowflake Sequencer | `BB-06`, `BB-10`, `BB-33` |
+| `CS-07` | Newsfeed Aggregator | `COMPLETE` | Activity Graphs, Hybrid Fan-out, Ranking Pipeline, Cache Invalidation | `BB-10`, `BB-33`, `BB-34` |
+| `CS-08` | Instagram / Flickr Photo Sharing Platform | `COMPLETE` | Image Ingestion, Thumbnail Generation, Object Storage, Global CDN | `BB-05`, `BB-14`, `BB-10` |
+| `CS-09` | TinyURL / URL Shortening Service | `COMPLETE` | Base62 Encoding, MD5/MurmurHash, Distributed Sequencer, Cache Sizing | `BB-04`, `BB-06`, `BB-24` |
+| `CS-10` | Distributed Web Crawler | `COMPLETE` | Politeness, Frontier Queue, DNS Caching, Duplicate Elimination (Bloom) | `BB-01`, `BB-11`, `BB-17` |
+| `CS-11` | WhatsApp / Discord Real-Time Chat Platform | `COMPLETE` | WebSocket Connections, Presence Service, Mnesia/Cassandra Chat Store | `BB-37`, `BB-04`, `BB-23` |
+| `CS-12` | Typeahead / Search Autocomplete System | `COMPLETE` | Trie Data Structure, Frequency Aggregation, Top-K Heap, CDN Edge | `BB-10`, `BB-15`, `BB-05` |
+| `CS-13` | Google Docs / Collaborative Document Editor | `COMPLETE` | Operational Transformation (OT) vs CRDTs, WebSocket, State Sync | `BB-37`, `BB-35` |
+| `CS-14` | Distributed Deployment & CI/CD Pipeline | `COMPLETE` | Canary Rollouts, Artifact Distribution, Task Graphs, Orchestration | `BB-17`, `BB-27`, `BB-31` |
+| `CS-15` | Stripe / PayPal Payment Gateway & Ledger | `COMPLETE` | Double-Entry Bookkeeping, Idempotency, 2PC/Saga, Distributed Lock | `BB-21`, `BB-30`, `BB-36` |
+| `CS-16` | LeetCode / HackerRank Online Coding Platform | `COMPLETE` | Sandboxed Code Execution (Docker/gVisor), Isolation, Task Scheduler | `BB-17`, `BB-27`, `BB-21` |
+| `CS-17` | ChatGPT Conversational AI Platform | `COMPLETE` | SSE Streaming Tokens, Context Buffer, Model Gateway, Vector Retrieval | `BB-39`, `BB-40`, `BB-37` |
+| `CS-18` | Distributed Big Data Lakehouse Platform | `COMPLETE` | Parquet Storage, Compaction, Metastore, Partition Pruning | `BB-14`, `BB-38` |
+| `CS-19` | LLM-Powered Customer Support Platform | `COMPLETE` | Multi-Turn Conversation State, Tool Calling, Vector Search, Fallbacks | `BB-39`, `BB-40`, `BB-10` |
+| `CS-20` | Enterprise AI Coding Assistant (Cursor / Copilot) | `COMPLETE` | AST Chunking, Context Slicing, Real-Time Inference, Prompt Cache | `BB-39`, `BB-40` |
 
 ---
 
