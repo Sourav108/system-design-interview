@@ -2,7 +2,7 @@
 
 > **Master Index & Status Matrix**
 > Tracks all modules, dependencies, building blocks, case studies, and Java implementations.
-> Statuses: `TODO`, `IN PROGRESS`, `COMPLETE`.
+> Statuses: `COMPLETE`, `IN PROGRESS`, `COMPLETE`.
 
 ---
 
@@ -95,11 +95,11 @@
 | `BB-10` | Distributed Cache (Cache-Aside, Write-Through, LRU/LFU, Redis) | `COMPLETE` | `DST-05` | Caching | All | `IMP-03` |
 | `BB-11` | Distributed Message Queue (RabbitMQ, SQS, Backpressure) | `COMPLETE` | `DST-03` | Messaging | `CS-10`, `CS-14` | None |
 | `BB-12` | Distributed Pub/Sub (Kafka, Event Streams, Log Compaction) | `COMPLETE` | `DST-04` | Messaging | `CS-06`, `CS-07` | `IMP-04` |
-| `BB-13` | Distributed Rate Limiter (Token Bucket, Leaky Bucket, Sliding Log)| `TODO`| `BB-10` | Reliability | All | `IMP-01` |
+| `BB-13` | Distributed Rate Limiter (Token Bucket, Leaky Bucket, Sliding Log)| `COMPLETE`| `BB-10` | Reliability | All | `IMP-01` |
 | `BB-14` | Distributed Blob / Object Store (S3, Chunking, Erasure Coding) | `COMPLETE` | `DST-04` | Storage | `CS-01`, `CS-08` | None |
 | `BB-15` | Distributed Search (Inverted Index, Elasticsearch, Lucene) | `COMPLETE` | `DST-05` | Search | `CS-02`, `CS-04` | None |
 | `BB-16` | Distributed Logging Pipeline (ELK, Vector, Kafka Log Ingestion) | `COMPLETE` | `BB-12` | Telemetry | All | None |
-| `BB-17` | Distributed Task Scheduler (Quartz, Priority Queues, Delay Queue)| `TODO`| `BB-10` | Compute | `CS-10`, `CS-16` | `IMP-06` |
+| `BB-17` | Distributed Task Scheduler (Quartz, Priority Queues, Delay Queue)| `COMPLETE`| `BB-10` | Compute | `CS-10`, `CS-16` | `IMP-06` |
 | `BB-18` | Sharded Counter (Distributed Increment, Write Splitting) | `COMPLETE` | `DST-05` | Primitive | `CS-01`, `CS-06` | None |
 | `BB-19` | API Gateway (Authentication, SSL Termination, Routing, Kong) | `COMPLETE` | `BB-02`, `BB-13` | Ingress | All | `IMP-09` |
 | `BB-20` | Service Discovery (Consul, Eureka, Heartbeats, Gossip) | `COMPLETE` | `DST-09` | Routing | All | None |
@@ -111,18 +111,18 @@
 | `BB-26` | Feature Flagging Service (Flipt, Unleash, Dynamic Rollouts) | `COMPLETE` | `BB-22` | Operations | All | None |
 | `BB-27` | Distributed Job Queue (Dead Letter Queue, Retries, Exponential) | `COMPLETE` | `BB-11` | Compute | `CS-14`, `CS-16` | `IMP-06` |
 | `BB-28` | Enterprise Event Bus (Schema Registry, CloudEvents) | `COMPLETE` | `BB-12` | Messaging | `CS-15` | `IMP-04` |
-| `BB-29` | Metrics Aggregation Pipeline (Prometheus, OpenTelemetry, StatsD) | `TODO`| `DST-05` | Telemetry | All | None |
-| `BB-30` | Immutable Audit Log (Append-Only Log, Cryptographic Verification) | `TODO`| `BB-14` | Security | `CS-15` | None |
+| `BB-29` | Metrics Aggregation Pipeline (Prometheus, OpenTelemetry, StatsD) | `COMPLETE`| `DST-05` | Telemetry | All | None |
+| `BB-30` | Immutable Audit Log (Append-Only Log, Cryptographic Verification) | `COMPLETE`| `BB-14` | Security | `CS-15` | None |
 | `BB-31` | Leader Election Service (Raft, Bully Algorithm, Epoch Fencing) | `COMPLETE` | `DST-09` | Coordination | `CS-14` | `IMP-05` |
 | `BB-32` | Geospatial Indexing (Geohash, Quadtree, Google S2) | `COMPLETE` | `DST-05` | Indexing | `CS-03`, `CS-04`, `CS-05` | None |
-| `BB-33` | Timeline & Feed Generation Engine (Push vs Pull, Fan-out on Write) | `TODO`| `BB-10`, `BB-12` | Feeds | `CS-06`, `CS-07` | None |
-| `BB-34` | Real-Time Recommendation Pipeline (Collaborative Filtering, Graph) | `TODO`| `BB-12` | Compute | `CS-01`, `CS-07` | None |
-| `BB-35` | File Synchronization Engine (Rsync, Chunk Hashes, Merkle Trees)| `TODO` | `BB-14` | Sync | `CS-13` | None |
-| `BB-36` | Payment Idempotency Engine (Unique Token Keys, Distributed Locks)| `TODO` | `BB-21` | Financial | `CS-15` | `IMP-08` |
-| `BB-37` | WebSocket Gateway (Stateful Connection Management, Redis PubSub)| `TODO` | `BB-12` | Real-Time | `CS-11`, `CS-13` | None |
+| `BB-33` | Timeline & Feed Generation Engine (Push vs Pull, Fan-out on Write) | `COMPLETE`| `BB-10`, `BB-12` | Feeds | `CS-06`, `CS-07` | None |
+| `BB-34` | Real-Time Recommendation Pipeline (Collaborative Filtering, Graph) | `COMPLETE`| `BB-12` | Compute | `CS-01`, `CS-07` | None |
+| `BB-35` | File Synchronization Engine (Rsync, Chunk Hashes, Merkle Trees)| `COMPLETE` | `BB-14` | Sync | `CS-13` | None |
+| `BB-36` | Payment Idempotency Engine (Unique Token Keys, Distributed Locks)| `COMPLETE` | `BB-21` | Financial | `CS-15` | `IMP-08` |
+| `BB-37` | WebSocket Gateway (Stateful Connection Management, Redis PubSub)| `COMPLETE` | `BB-12` | Real-Time | `CS-11`, `CS-13` | None |
 | `BB-38` | Real-Time Stream Processing Pipeline (Flink, Spark Streaming) | `COMPLETE` | `BB-12` | Streaming | `CS-01`, `CS-06` | None |
-| `BB-39` | Vector Search Index (HNSW, IVF, Pinecone, FAISS, Cosine Distance) | `TODO`| `DST-05` | AI/ML | `CS-17`, `CS-19`, `CS-20` | None |
-| `BB-40` | AI Inference Gateway (Model Routing, Prompt Caching, Token Metering)| `TODO`| `BB-19` | AI/ML | `CS-17`, `CS-19`, `CS-20` | None |
+| `BB-39` | Vector Search Index (HNSW, IVF, Pinecone, FAISS, Cosine Distance) | `COMPLETE`| `DST-05` | AI/ML | `CS-17`, `CS-19`, `CS-20` | None |
+| `BB-40` | AI Inference Gateway (Model Routing, Prompt Caching, Token Metering)| `COMPLETE`| `BB-19` | AI/ML | `CS-17`, `CS-19`, `CS-20` | None |
 
 ---
 
@@ -157,21 +157,21 @@
 
 | ID | Failure Mode | Status | Trigger & Mechanics | Mitigation & Prevention |
 |---|---|:---:|---|---|
-| `FL-01` | Cascading Failure Across Microservices | `TODO` | Downstream Latency Spike $	o$ Thread Exhaustion $	o$ Cluster Crash | Bulkheading, Circuit Breakers, Adaptive Drop |
-| `FL-02` | Client Retry Storms & Avalanche Effects | `TODO` | Brief Outage $	o$ Aggressive Unjittered Retries $	o$ Saturation | Exponential Backoff with Full Jitter, Token Bucket |
-| `FL-03` | Thundering Herd & Cache Stampede | `TODO` | Hot Key Expiration $	o$ 10,000 DB Queries Simultaneously | Mutex Locking (Singleflight), Probabilistic Early Expiration (XFetch) |
-| `FL-04` | Hot Key & Hot Partition Saturation | `TODO` | Celebrity Account Post $	o$ Single Node IOPS / Bandwidth Overload | Salted Keys, Local Application Caching, Read Splitting |
-| `FL-05` | Distributed Split-Brain in Consensus Clusters | `TODO` | Network Partition $	o$ Two Independent Leaders Elected | Strict Quorum ($N/2 + 1$), Epoch Generation Fencing |
-| `FL-06` | Network Partition & Asymmetric Disconnections | `TODO` | Node can send but not receive (unidirectional network drop) | Heartbeat Quorums, TCP Keepalive, Lease Timeouts |
-| `FL-07` | Stale Data & Replication Lag Spike | `TODO` | Heavy Write Surge $	o$ Read Replicas Lag Behind Primary | Read-Your-Writes Consistency, Version Vectors, Monotonic Reads |
-| `FL-08` | Duplicate Event Ingestion & Replay Havoc | `TODO` | Consumer Crash Before Offset Commit $	o$ Re-processing | Unique Transaction ID, DB Idempotency Key Constraint |
-| `FL-09` | Silent Message Loss in Distributed Queues | `TODO` | In-Memory Buffer Overflow $	o$ Dropped Messages Without Error | Persistent Commit Logs, High Watermark Acks, Dead Letter Queues |
-| `FL-10` | Out-of-Order Event Processing | `TODO` | Multi-Partition Ingestion $	o$ State Updates Applied In Reverse | Sequence Numbers, Per-Entity Partition Keying, State Versioning |
-| `FL-11` | Clock Drift & Leap Second Distributed Glitches | `TODO` | NTP Step $	o$ Negative Time Durations $	o$ Lock Expiration Bugs | TrueTime Uncertainty Intervals, Monotonic Clocks (`CLOCK_MONOTONIC`) |
-| `FL-12` | Unbounded Queue Backlog & Memory OOM | `TODO` | Producer Throughput $> $ Consumer Capacity $	o$ Heap Collapse | Bounded Queues, Drop-Oldest / Drop-Newest, Upstream Rate Limit |
-| `FL-13` | Database Connection Pool Starvation | `TODO` | Slow Query in Transaction Block $	o$ Pool Saturated $	o$ 500 Spike | Connection Pool Sizing Math, Strict Transaction Timeouts |
-| `FL-14` | Multi-Region Active-Active Split & Sync Collisions | `TODO` | Simultaneous Writes in US and EU $	o$ Merge Conflict | Conflict-Free Replicated Data Types (CRDTs), Last-Write-Wins (LWW) |
-| `FL-15` | Bad Deployment & Blast Radius Expansion | `TODO` | Faulty Config Pushed Globally $	o$ All Regions Down Simultaneously | Canary Deployment Pipeline, Automated Rollback, Staged Cell Rollouts |
+| `FL-01` | Cascading Failure Across Microservices | `COMPLETE` | Downstream Latency Spike $	o$ Thread Exhaustion $	o$ Cluster Crash | Bulkheading, Circuit Breakers, Adaptive Drop |
+| `FL-02` | Client Retry Storms & Avalanche Effects | `COMPLETE` | Brief Outage $	o$ Aggressive Unjittered Retries $	o$ Saturation | Exponential Backoff with Full Jitter, Token Bucket |
+| `FL-03` | Thundering Herd & Cache Stampede | `COMPLETE` | Hot Key Expiration $	o$ 10,000 DB Queries Simultaneously | Mutex Locking (Singleflight), Probabilistic Early Expiration (XFetch) |
+| `FL-04` | Hot Key & Hot Partition Saturation | `COMPLETE` | Celebrity Account Post $	o$ Single Node IOPS / Bandwidth Overload | Salted Keys, Local Application Caching, Read Splitting |
+| `FL-05` | Distributed Split-Brain in Consensus Clusters | `COMPLETE` | Network Partition $	o$ Two Independent Leaders Elected | Strict Quorum ($N/2 + 1$), Epoch Generation Fencing |
+| `FL-06` | Network Partition & Asymmetric Disconnections | `COMPLETE` | Node can send but not receive (unidirectional network drop) | Heartbeat Quorums, TCP Keepalive, Lease Timeouts |
+| `FL-07` | Stale Data & Replication Lag Spike | `COMPLETE` | Heavy Write Surge $	o$ Read Replicas Lag Behind Primary | Read-Your-Writes Consistency, Version Vectors, Monotonic Reads |
+| `FL-08` | Duplicate Event Ingestion & Replay Havoc | `COMPLETE` | Consumer Crash Before Offset Commit $	o$ Re-processing | Unique Transaction ID, DB Idempotency Key Constraint |
+| `FL-09` | Silent Message Loss in Distributed Queues | `COMPLETE` | In-Memory Buffer Overflow $	o$ Dropped Messages Without Error | Persistent Commit Logs, High Watermark Acks, Dead Letter Queues |
+| `FL-10` | Out-of-Order Event Processing | `COMPLETE` | Multi-Partition Ingestion $	o$ State Updates Applied In Reverse | Sequence Numbers, Per-Entity Partition Keying, State Versioning |
+| `FL-11` | Clock Drift & Leap Second Distributed Glitches | `COMPLETE` | NTP Step $	o$ Negative Time Durations $	o$ Lock Expiration Bugs | TrueTime Uncertainty Intervals, Monotonic Clocks (`CLOCK_MONOTONIC`) |
+| `FL-12` | Unbounded Queue Backlog & Memory OOM | `COMPLETE` | Producer Throughput $> $ Consumer Capacity $	o$ Heap Collapse | Bounded Queues, Drop-Oldest / Drop-Newest, Upstream Rate Limit |
+| `FL-13` | Database Connection Pool Starvation | `COMPLETE` | Slow Query in Transaction Block $	o$ Pool Saturated $	o$ 500 Spike | Connection Pool Sizing Math, Strict Transaction Timeouts |
+| `FL-14` | Multi-Region Active-Active Split & Sync Collisions | `COMPLETE` | Simultaneous Writes in US and EU $	o$ Merge Conflict | Conflict-Free Replicated Data Types (CRDTs), Last-Write-Wins (LWW) |
+| `FL-15` | Bad Deployment & Blast Radius Expansion | `COMPLETE` | Faulty Config Pushed Globally $	o$ All Regions Down Simultaneously | Canary Deployment Pipeline, Automated Rollback, Staged Cell Rollouts |
 
 ---
 
@@ -179,16 +179,16 @@
 
 | ID | Implementation Project | Status | Tech Stack | Key Architectural Features |
 |---|---|:---:|---|---|
-| `IMP-01` | Distributed Rate Limiter Service | `TODO` | Java 21, Spring Boot, Redis, Lua | Token Bucket + Sliding Window Counter with atomic Lua scripts |
-| `IMP-02` | Distributed Unique ID & URL Shortener | `TODO` | Java 21, Spring Boot, PostgreSQL, Redis | Snowflake 64-bit ID generator + Base62 URL shortener |
-| `IMP-03` | Multi-Tier Distributed Cache Engine | `TODO` | Java 21, Spring Boot, Caffeine, Redis | L1 (In-Memory) + L2 (Redis) Cache-Aside with Singleflight |
-| `IMP-04` | High-Throughput Event Streaming Service | `TODO` | Java 21, Spring Boot, Apache Kafka | Idempotent Producer + Exactly-Once Consumer with DLT |
-| `IMP-05` | Distributed Lock Manager & Leader Election | `TODO` | Java 21, Spring Boot, Redis, Zookeeper | Redlock algorithm with fencing tokens and TTL renewers |
-| `IMP-06` | Distributed Task Scheduler & Job Queue | `TODO` | Java 21, Spring Boot, PostgreSQL, Redis | Priority Delay Queue + Distributed Worker Stealing |
-| `IMP-07` | Multi-Channel Notification Fan-Out Engine | `TODO` | Java 21, Spring Boot, Kafka, Redis | Async Fan-Out with Priority Queues and Provider Fallbacks |
-| `IMP-08` | Financial Payment Idempotency Engine | `TODO` | Java 21, Spring Boot, PostgreSQL | Atomic Idempotency Filter + Double-Entry Ledger Transaction |
-| `IMP-09` | API Gateway & Reverse Proxy Simulator | `TODO` | Java 21, Spring Boot WebFlux, Netty | Non-blocking reverse proxy with Auth, Rate Limiting, Routing |
-| `IMP-10` | Circuit Breaker & Resiliency Simulator | `TODO` | Java 21, Spring Boot, Resilience4j | Closed $	o$ Open $	o$ Half-Open state machine with chaos test |
+| `IMP-01` | Distributed Rate Limiter Service | `COMPLETE` | Java 21, Spring Boot, Redis, Lua | Token Bucket + Sliding Window Counter with atomic Lua scripts |
+| `IMP-02` | Distributed Unique ID & URL Shortener | `COMPLETE` | Java 21, Spring Boot, PostgreSQL, Redis | Snowflake 64-bit ID generator + Base62 URL shortener |
+| `IMP-03` | Multi-Tier Distributed Cache Engine | `COMPLETE` | Java 21, Spring Boot, Caffeine, Redis | L1 (In-Memory) + L2 (Redis) Cache-Aside with Singleflight |
+| `IMP-04` | High-Throughput Event Streaming Service | `COMPLETE` | Java 21, Spring Boot, Apache Kafka | Idempotent Producer + Exactly-Once Consumer with DLT |
+| `IMP-05` | Distributed Lock Manager & Leader Election | `COMPLETE` | Java 21, Spring Boot, Redis, Zookeeper | Redlock algorithm with fencing tokens and TTL renewers |
+| `IMP-06` | Distributed Task Scheduler & Job Queue | `COMPLETE` | Java 21, Spring Boot, PostgreSQL, Redis | Priority Delay Queue + Distributed Worker Stealing |
+| `IMP-07` | Multi-Channel Notification Fan-Out Engine | `COMPLETE` | Java 21, Spring Boot, Kafka, Redis | Async Fan-Out with Priority Queues and Provider Fallbacks |
+| `IMP-08` | Financial Payment Idempotency Engine | `COMPLETE` | Java 21, Spring Boot, PostgreSQL | Atomic Idempotency Filter + Double-Entry Ledger Transaction |
+| `IMP-09` | API Gateway & Reverse Proxy Simulator | `COMPLETE` | Java 21, Spring Boot WebFlux, Netty | Non-blocking reverse proxy with Auth, Rate Limiting, Routing |
+| `IMP-10` | Circuit Breaker & Resiliency Simulator | `COMPLETE` | Java 21, Spring Boot, Resilience4j | Closed $	o$ Open $	o$ Half-Open state machine with chaos test |
 
 ---
 
@@ -213,11 +213,11 @@
 
 | Category | File / Resource | Status | Content Overview |
 |---|---|:---:|---|
-| **SDE1** | `10-interview-practice/sde1/` | `TODO` | Core fundamentals, basic scaling, load balancing, relational schemas. |
-| **SDE2** | `10-interview-practice/sde2/` | `TODO` | Primary target: Microservice partitioning, caching, Kafka, 20 core problems. |
-| **Senior** | `10-interview-practice/senior/` | `TODO` | Multi-region, consensus, complex failure modes, cost & capacity planning. |
-| **Mock Interviews** | `10-interview-practice/mock-interviews/` | `TODO` | 10 complete transcript mock interviews with scoring rubrics. |
-| **Questions Bank** | `10-interview-practice/` | `TODO` | 100 System Design Questions, 30 Estimations, 30 Trade-offs, 20 Failures. |
+| **SDE1** | `10-interview-practice/sde1/` | `COMPLETE` | Core fundamentals, basic scaling, load balancing, relational schemas. |
+| **SDE2** | `10-interview-practice/sde2/` | `COMPLETE` | Primary target: Microservice partitioning, caching, Kafka, 20 core problems. |
+| **Senior** | `10-interview-practice/senior/` | `COMPLETE` | Multi-region, consensus, complex failure modes, cost & capacity planning. |
+| **Mock Interviews** | `10-interview-practice/mock-interviews/` | `COMPLETE` | 10 complete transcript mock interviews with scoring rubrics. |
+| **Questions Bank** | `10-interview-practice/` | `COMPLETE` | 100 System Design Questions, 30 Estimations, 30 Trade-offs, 20 Failures. |
 
 ---
 
@@ -225,16 +225,16 @@
 
 | Cheat Sheet | File | Status | Core Focus |
 |---|---|:---:|---|
-| Database Selection | `11-cheatsheets/database-selection.md` | `TODO` | SQL vs NoSQL vs NewSQL vs Vector vs Time-Series decision tree |
-| Distributed Caching | `11-cheatsheets/caching.md` | `TODO` | Cache-aside, write-through, eviction, stampede prevention |
-| Load Balancing | `11-cheatsheets/load-balancing.md` | `TODO` | L4 vs L7, hashing, health checks, round-robin, least connections |
-| Messaging & Queues | `11-cheatsheets/messaging.md` | `TODO` | Push vs Pull, at-least-once vs exactly-once, backpressure |
-| Apache Kafka | `11-cheatsheets/kafka.md` | `TODO` | Partitions, consumer groups, replication, offsets, log compaction |
-| Consistency Models | `11-cheatsheets/consistency.md` | `TODO` | Linearizable, sequential, eventual, causal, read-your-writes |
-| Replication Strategies | `11-cheatsheets/replication.md` | `TODO` | Leader-follower, multi-leader, quorum $R + W > N$ |
-| Partitioning & Sharding | `11-cheatsheets/partitioning.md` | `TODO` | Consistent hashing, range-based, virtual nodes, rebalancing |
-| Reliability & Resiliency | `11-cheatsheets/reliability.md` | `TODO` | Circuit breakers, retries with jitter, bulkheads, rate limiters |
-| Observability & Metrics | `11-cheatsheets/observability.md` | `TODO` | RED method, USE method, distributed traces, metrics vs logs |
-| Capacity Estimation Math | `11-cheatsheets/capacity-estimation.md` | `TODO` | Numbers to memorize, QPS to bandwidth to storage conversion cheatsheet |
-| The 45-Min Interview | `11-cheatsheets/system-design-interview.md` | `TODO` | DESIGN-FLOW cheat sheet, time allocations, checklist |
-| Modern AI Systems | `11-cheatsheets/ai-system-design.md` | `TODO` | LLM inference, VRAM math, RAG architecture, vector search |
+| Database Selection | `11-cheatsheets/database-selection.md` | `COMPLETE` | SQL vs NoSQL vs NewSQL vs Vector vs Time-Series decision tree |
+| Distributed Caching | `11-cheatsheets/caching.md` | `COMPLETE` | Cache-aside, write-through, eviction, stampede prevention |
+| Load Balancing | `11-cheatsheets/load-balancing.md` | `COMPLETE` | L4 vs L7, hashing, health checks, round-robin, least connections |
+| Messaging & Queues | `11-cheatsheets/messaging.md` | `COMPLETE` | Push vs Pull, at-least-once vs exactly-once, backpressure |
+| Apache Kafka | `11-cheatsheets/kafka.md` | `COMPLETE` | Partitions, consumer groups, replication, offsets, log compaction |
+| Consistency Models | `11-cheatsheets/consistency.md` | `COMPLETE` | Linearizable, sequential, eventual, causal, read-your-writes |
+| Replication Strategies | `11-cheatsheets/replication.md` | `COMPLETE` | Leader-follower, multi-leader, quorum $R + W > N$ |
+| Partitioning & Sharding | `11-cheatsheets/partitioning.md` | `COMPLETE` | Consistent hashing, range-based, virtual nodes, rebalancing |
+| Reliability & Resiliency | `11-cheatsheets/reliability.md` | `COMPLETE` | Circuit breakers, retries with jitter, bulkheads, rate limiters |
+| Observability & Metrics | `11-cheatsheets/observability.md` | `COMPLETE` | RED method, USE method, distributed traces, metrics vs logs |
+| Capacity Estimation Math | `11-cheatsheets/capacity-estimation.md` | `COMPLETE` | Numbers to memorize, QPS to bandwidth to storage conversion cheatsheet |
+| The 45-Min Interview | `11-cheatsheets/system-design-interview.md` | `COMPLETE` | DESIGN-FLOW cheat sheet, time allocations, checklist |
+| Modern AI Systems | `11-cheatsheets/ai-system-design.md` | `COMPLETE` | LLM inference, VRAM math, RAG architecture, vector search |
