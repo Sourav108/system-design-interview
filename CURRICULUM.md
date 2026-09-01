@@ -10,13 +10,13 @@
 
 | ID | Topic | Status | Dependencies | Building Block | Case Studies | Implementation |
 |---|---|:---:|---|---|---|---|
-| `INT-01` | What is System Design? | `TODO` | None | None | All | None |
-| `INT-02` | System Design vs Low-Level Design (HLD vs LLD) | `TODO` | `INT-01` | None | All | None |
-| `INT-03` | System Design vs Coding Interviews | `TODO` | `INT-01` | None | All | None |
-| `INT-04` | How to Approach Ambiguous Problems | `TODO` | `INT-01` | None | All | None |
-| `INT-05` | How to Communicate Architecture | `TODO` | `INT-04` | None | All | None |
-| `INT-06` | How to Reason About Trade-Offs | `TODO` | `INT-05` | None | All | None |
-| `INT-07` | Architecture Diagramming Standards | `TODO` | `INT-05` | None | All | None |
+| `INT-01` | What is System Design? | `COMPLETE` | None | None | All | None |
+| `INT-02` | System Design vs Low-Level Design (HLD vs LLD) | `COMPLETE` | `INT-01` | None | All | None |
+| `INT-03` | System Design vs Coding Interviews | `COMPLETE` | `INT-01` | None | All | None |
+| `INT-04` | How to Approach Ambiguous Problems | `COMPLETE` | `INT-01` | None | All | None |
+| `INT-05` | How to Communicate Architecture | `COMPLETE` | `INT-04` | None | All | None |
+| `INT-06` | How to Reason About Trade-Offs | `COMPLETE` | `INT-05` | None | All | None |
+| `INT-07` | Architecture Diagramming Standards | `COMPLETE` | `INT-05` | None | All | None |
 
 ---
 
@@ -24,13 +24,13 @@
 
 | ID | Topic | Status | Dependencies | Building Block | Case Studies | Implementation |
 |---|---|:---:|---|---|---|---|
-| `FND-01` | The DESIGN-FLOW 45-Minute Game Plan | `TODO` | `INT-04` | All | All | None |
-| `FND-02` | Step 1: Requirements Scoping | `TODO` | `FND-01` | None | All | None |
-| `FND-03` | Step 2 & 3: Constraints & Scale Estimation | `TODO` | `FND-01` | `BB-01` to `BB-40` | All | None |
-| `FND-04` | Step 4 & 5: High-Level Architecture & Data Model | `TODO` | `FND-01` | `BB-03`, `BB-10` | All | None |
-| `FND-05` | Step 6 & 7: Communication & Reliability | `TODO` | `FND-01` | `BB-11`, `BB-13` | All | `IMP-01`, `IMP-04` |
-| `FND-06` | Step 8, 9 & 10: Bottlenecks, Trade-Offs & Deep Dives | `TODO` | `FND-01` | All | All | None |
-| `FND-07` | Interview Pacing & Time Management | `TODO` | `FND-01` | None | All | None |
+| `FND-01` | The DESIGN-FLOW 45-Minute Game Plan | `COMPLETE` | `INT-04` | All | All | None |
+| `FND-02` | Step 1: Requirements Scoping | `COMPLETE` | `FND-01` | None | All | None |
+| `FND-03` | Step 2 & 3: Constraints & Scale Estimation | `COMPLETE` | `FND-01` | `BB-01` to `BB-40` | All | None |
+| `FND-04` | Step 4 & 5: High-Level Architecture & Data Model | `COMPLETE` | `FND-01` | `BB-03`, `BB-10` | All | None |
+| `FND-05` | Step 6 & 7: Communication & Reliability | `COMPLETE` | `FND-01` | `BB-11`, `BB-13` | All | `IMP-01`, `IMP-04` |
+| `FND-06` | Step 8, 9 & 10: Bottlenecks, Trade-Offs & Deep Dives | `COMPLETE` | `FND-01` | All | All | None |
+| `FND-07` | Interview Pacing & Time Management | `COMPLETE` | `FND-01` | None | All | None |
 
 ---
 
