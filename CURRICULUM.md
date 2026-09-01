@@ -38,16 +38,16 @@
 
 | ID | Topic | Status | Dependencies | Building Block | Case Studies | Implementation |
 |---|---|:---:|---|---|---|---|
-| `DST-01` | Network Abstractions (TCP/UDP, HTTP/2, HTTP/3, gRPC) | `TODO` | None | `BB-01`, `BB-02`, `BB-19` | All | `IMP-09` |
-| `DST-02` | Partial Failure & Failure Models (Crash-Stop vs Byzantine) | `TODO` | `DST-01` | `BB-21`, `BB-31` | All | `IMP-05` |
-| `DST-03` | Distributed State Management | `TODO` | `DST-02` | `BB-03`, `BB-04`, `BB-10` | All | `IMP-03` |
-| `DST-04` | Replication Strategies (Leader-Follower, Multi-Leader, Quorum) | `TODO` | `DST-03` | `BB-03`, `BB-04` | `CS-01`, `CS-06` | `IMP-03` |
-| `DST-05` | Partitioning & Sharding (Consistent Hashing, Range, Hash) | `TODO` | `DST-04` | `BB-04`, `BB-10`, `BB-18` | `CS-06`, `CS-09` | `IMP-02`, `IMP-03` |
-| `DST-06` | Consistency Models (Linearizable, Sequential, Eventual, Causal) | `TODO` | `DST-04` | `BB-03`, `BB-04` | `CS-11`, `CS-15` | `IMP-08` |
-| `DST-07` | CAP & PACELC Theorems in Practice | `TODO` | `DST-06` | `BB-03`, `BB-04`, `BB-10` | All | None |
-| `DST-08` | Time, Clocks & Ordering (NTP, Lamport, Vector Clocks, TrueTime) | `TODO` | `DST-06` | `BB-06`, `BB-24` | `CS-11`, `CS-13` | `IMP-02` |
-| `DST-09` | Distributed Consensus (Paxos, Raft, Zab) | `TODO` | `DST-08` | `BB-21`, `BB-31` | `CS-14`, `CS-15` | `IMP-05` |
-| `DST-10` | Idempotency & Exactly-Once Semantics | `TODO` | `DST-06` | `BB-36` | `CS-15` | `IMP-08` |
+| `DST-01` | Network Abstractions (TCP/UDP, HTTP/2, HTTP/3, gRPC) | `COMPLETE` | None | `BB-01`, `BB-02`, `BB-19` | All | `IMP-09` |
+| `DST-02` | Partial Failure & Failure Models (Crash-Stop vs Byzantine) | `COMPLETE` | `DST-01` | `BB-21`, `BB-31` | All | `IMP-05` |
+| `DST-03` | Distributed State Management | `COMPLETE` | `DST-02` | `BB-03`, `BB-04`, `BB-10` | All | `IMP-03` |
+| `DST-04` | Replication Strategies (Leader-Follower, Multi-Leader, Quorum) | `COMPLETE` | `DST-03` | `BB-03`, `BB-04` | `CS-01`, `CS-06` | `IMP-03` |
+| `DST-05` | Partitioning & Sharding (Consistent Hashing, Range, Hash) | `COMPLETE` | `DST-04` | `BB-04`, `BB-10`, `BB-18` | `CS-06`, `CS-09` | `IMP-02`, `IMP-03` |
+| `DST-06` | Consistency Models (Linearizable, Sequential, Eventual, Causal) | `COMPLETE` | `DST-04` | `BB-03`, `BB-04` | `CS-11`, `CS-15` | `IMP-08` |
+| `DST-07` | CAP & PACELC Theorems in Practice | `COMPLETE` | `DST-06` | `BB-03`, `BB-04`, `BB-10` | All | None |
+| `DST-08` | Time, Clocks & Ordering (NTP, Lamport, Vector Clocks, TrueTime) | `COMPLETE` | `DST-06` | `BB-06`, `BB-24` | `CS-11`, `CS-13` | `IMP-02` |
+| `DST-09` | Distributed Consensus (Paxos, Raft, Zab) | `COMPLETE` | `DST-08` | `BB-21`, `BB-31` | `CS-14`, `CS-15` | `IMP-05` |
+| `DST-10` | Idempotency & Exactly-Once Semantics | `COMPLETE` | `DST-06` | `BB-36` | `CS-15` | `IMP-08` |
 
 ---
 
@@ -55,14 +55,14 @@
 
 | ID | Topic | Status | Dependencies | Building Block | Case Studies | Implementation |
 |---|---|:---:|---|---|---|---|
-| `NFR-01` | Availability (99.9% to 99.999%, MTBF, MTTR, SLA/SLO/SLI) | `TODO` | `DST-04` | `BB-02`, `BB-03` | All | None |
-| `NFR-02` | Reliability & Fault Tolerance (Redundancy, Graceful Degradation) | `TODO` | `NFR-01` | `BB-13`, `BB-21` | All | `IMP-10` |
-| `NFR-03` | Scalability (Horizontal vs Vertical, Stateless vs Stateful) | `TODO` | `DST-05` | `BB-02`, `BB-10` | All | `IMP-01` |
-| `NFR-04` | Latency & Performance (p50, p90, p99, p99.9 tail latencies) | `TODO` | `DST-01` | `BB-05`, `BB-10` | All | `IMP-03` |
-| `NFR-05` | Throughput & Bandwidth (IOPS, QPS, Egress/Ingress Saturation) | `TODO` | `NFR-04` | `BB-11`, `BB-14` | `CS-01`, `CS-08` | `IMP-04` |
-| `NFR-06` | Durability & Data Loss Prevention (WAL, RAID, Multi-AZ) | `TODO` | `DST-04` | `BB-03`, `BB-14` | `CS-15` | None |
-| `NFR-07` | Observability (Metrics, Distributed Tracing, Structured Logging) | `TODO` | None | `BB-07`, `BB-16`, `BB-29` | All | None |
-| `NFR-08` | Security & Compliance (TLS, OAuth2, RBAC, Encryption At Rest) | `TODO` | None | `BB-19`, `BB-25`, `BB-30` | All | `IMP-09` |
+| `NFR-01` | Availability (99.9% to 99.999%, MTBF, MTTR, SLA/SLO/SLI) | `COMPLETE` | `DST-04` | `BB-02`, `BB-03` | All | None |
+| `NFR-02` | Reliability & Fault Tolerance (Redundancy, Graceful Degradation) | `COMPLETE` | `NFR-01` | `BB-13`, `BB-21` | All | `IMP-10` |
+| `NFR-03` | Scalability (Horizontal vs Vertical, Stateless vs Stateful) | `COMPLETE` | `DST-05` | `BB-02`, `BB-10` | All | `IMP-01` |
+| `NFR-04` | Latency & Performance (p50, p90, p99, p99.9 tail latencies) | `COMPLETE` | `DST-01` | `BB-05`, `BB-10` | All | `IMP-03` |
+| `NFR-05` | Throughput & Bandwidth (IOPS, QPS, Egress/Ingress Saturation) | `COMPLETE` | `NFR-04` | `BB-11`, `BB-14` | `CS-01`, `CS-08` | `IMP-04` |
+| `NFR-06` | Durability & Data Loss Prevention (WAL, RAID, Multi-AZ) | `COMPLETE` | `DST-04` | `BB-03`, `BB-14` | `CS-15` | None |
+| `NFR-07` | Observability (Metrics, Distributed Tracing, Structured Logging) | `COMPLETE` | None | `BB-07`, `BB-16`, `BB-29` | All | None |
+| `NFR-08` | Security & Compliance (TLS, OAuth2, RBAC, Encryption At Rest) | `COMPLETE` | None | `BB-19`, `BB-25`, `BB-30` | All | `IMP-09` |
 
 ---
 
@@ -70,12 +70,12 @@
 
 | ID | Topic | Status | Dependencies | Building Block | Case Studies | Implementation |
 |---|---|:---:|---|---|---|---|
-| `CAP-01` | Powers of Two & Latency Numbers Every Engineer Should Know | `TODO` | None | None | All | None |
-| `CAP-02` | Traffic & QPS Estimation (Read/Write Ratios, Peak Multipliers) | `TODO` | `CAP-01` | `BB-02`, `BB-13` | All | `IMP-01` |
-| `CAP-03` | Storage Capacity & Growth Trajectory (5-Year Projections) | `TODO` | `CAP-01` | `BB-03`, `BB-14` | All | None |
-| `CAP-04` | Bandwidth & Network Throughput Estimation | `TODO` | `CAP-02` | `BB-05`, `BB-14` | `CS-01`, `CS-08` | None |
-| `CAP-05` | Memory & Distributed Cache Sizing (80-20 Pareto Rule) | `TODO` | `CAP-02` | `BB-10` | All | `IMP-03` |
-| `CAP-06` | Server Cluster & Core Count Estimation | `TODO` | `CAP-02` | `BB-02`, `BB-19` | All | None |
+| `CAP-01` | Powers of Two & Latency Numbers Every Engineer Should Know | `COMPLETE` | None | None | All | None |
+| `CAP-02` | Traffic & QPS Estimation (Read/Write Ratios, Peak Multipliers) | `COMPLETE` | `CAP-01` | `BB-02`, `BB-13` | All | `IMP-01` |
+| `CAP-03` | Storage Capacity & Growth Trajectory (5-Year Projections) | `COMPLETE` | `CAP-01` | `BB-03`, `BB-14` | All | None |
+| `CAP-04` | Bandwidth & Network Throughput Estimation | `COMPLETE` | `CAP-02` | `BB-05`, `BB-14` | `CS-01`, `CS-08` | None |
+| `CAP-05` | Memory & Distributed Cache Sizing (80-20 Pareto Rule) | `COMPLETE` | `CAP-02` | `BB-10` | All | `IMP-03` |
+| `CAP-06` | Server Cluster & Core Count Estimation | `COMPLETE` | `CAP-02` | `BB-02`, `BB-19` | All | None |
 
 ---
 
