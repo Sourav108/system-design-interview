@@ -1,0 +1,32 @@
+# OS Artifacts
+.DS_Store
+Thumbs.db
+
+# IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+*.iml
+
+# Java / Maven / Gradle
+target/
+build/
+.gradle/
+*.class
+*.jar
+*.war
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.env
+
+# Go
+bin/
+pkg/
+
+# Logs & Dumps
+*.log
+*.dump
